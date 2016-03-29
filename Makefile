@@ -36,6 +36,7 @@ run:
 		--device=/dev/dri:/dev/dri \
 		-v /tmp/.X11-unix:/tmp/.X11-unix \
 		-v $(PWD)/gamedevhome:/home/gamedev \
+		-p 11211:11211 \
 		--name unity3d \
 		unity3d:$(DOCKER_TAG) \
 		-logFile /proc/1/fd/0

@@ -45,6 +45,7 @@ RUN mkdir -p /usr/share/icons/hicolor && \
   fonts-liberation \
 	gconf-service \
 	hicolor-icon-theme \
+  git \
 	libappindicator1 \
 	libasound2 \
 	libcanberra-gtk-module \
@@ -75,3 +76,4 @@ USER gamedev
 WORKDIR /home/gamedev
 ENV DISPLAY=:0
 ENTRYPOINT ["sudo", "/opt/Unity/Editor/Unity"]
+EXPOSE 11211
